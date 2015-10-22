@@ -24,7 +24,7 @@ y_train<-read.table('UCI HAR Dataset/train/y_train.txt')
 subject_train<-read.table('UCI HAR Dataset/train/subject_train.txt')
 
 #test
-X_test<-read.table('UCI HAR Dataset/test/X_test.txt')
+x_test<-read.table('UCI HAR Dataset/test/X_test.txt')
 y_test<-read.table('UCI HAR Dataset/test/y_test.txt')
 subject_test<-read.table('UCI HAR Dataset/test/subject_test.txt')
 
@@ -34,7 +34,7 @@ subject<-rbind(subject_train, subject_test)
 y<-rbind(y_train, y_test)
 
 #x becomes d as it contains the collected data
-d<-rbind(x_train, X_test)
+d<-rbind(x_train, x_test)
 
 #pull out the second column of the features data set
 features<-select(features, V2)
