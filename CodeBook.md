@@ -150,15 +150,6 @@ load the dplyr package
 library(dplyr)
 ```
 
-check to see if the zip file has already been downloaded, if so, skip this step
-
-```{r}
-if(!file.exists("raw.zip")){
-getD<-download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",destfile = "raw.zip")
-}
-```
-
-
 check to see if the file has been unzipped, if so, skip this step
 
 ```{r}
